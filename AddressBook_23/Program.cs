@@ -32,6 +32,14 @@ namespace AddressBook_23
             contacts.AddContact();
             contacts.ViewContact();
             contacts.Display();
+            //UC_6
+            AddMultipleContacts multipleContacts = new AddMultipleContacts();
+            multipleContacts.AddContact();
+            multipleContacts.ViewContact();
+            multipleContacts.EditContact();
+            multipleContacts.DeleteContact();
+            multipleContacts.ChangeAddressBook();
+            multipleContacts.Display();
         }
     }
 }

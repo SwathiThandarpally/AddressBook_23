@@ -9,9 +9,14 @@ namespace AddressBook_23
         {
             Console.WriteLine("Displaying Address Book Program");
             //UC_1
-            CreateContact create = new CreateContact();
-            MainAddress address = new MainAddress();
-            address.CreateContact();
+            //CreateContact create = new CreateContact();
+            //MainAddress address = new MainAddress();
+            //address.CreateContact();
+            //UC_2
+            AddContact add = new AddContact();
+            MainAddress mainAddress = new MainAddress();
+            add.CreateContact();
+            add.Display();
 
         }
     }

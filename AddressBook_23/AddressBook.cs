@@ -25,36 +25,16 @@ namespace AddressBook_23
             Details personEntered = new Details();
             Console.Write("Enter First name : ");
             string firstName = Console.ReadLine();
-            personEntered.FirstName = Console.ReadLine();
+            personEntered.FirstName = "FirstName";
+            personEntered.LastName = "LastName";
+            personEntered.PhoneNumber = 9999999;
+            personEntered.Zip = 1233;
+            personEntered.State = "State";
+            personEntered.Email = "abc@gmail.com";
+            personEntered.City = "hyd";
+            personEntered.Address = "address";
 
-            Console.Write("Enter Last name : ");
-            string lastName = Console.ReadLine();
-
-            if (contactDetailsList.Find(i => personEntered.Equals(i)) != null)
-            {
-                Console.WriteLine("Person already Exists, enter new person!");
-                return;
-            }
-
-            Console.WriteLine("Enter Address");
-            string address = Console.ReadLine();
-            personEntered.Address = Console.ReadLine();
-            Console.WriteLine("Enter City");
-            personEntered.City = Console.ReadLine();
-            Console.WriteLine("Enter State");
-            personEntered.State = Console.ReadLine();
-            Console.WriteLine("Enter Zip");
-            int zip = Convert.ToInt32(Console.ReadLine());
-            string zipString = zip.ToString();
-            personEntered.Zip = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter phoneNumber");
-            long phoneNumber = Convert.ToInt32(Console.ReadLine());
-            string phoneNumberString = phoneNumber.ToString();
-            personEntered.PhoneNumber = Convert.ToInt64(Console.ReadLine());
-            Console.WriteLine("Enter Email");
-            string email = Console.ReadLine();
-            personEntered.Email = Console.ReadLine();
-            contactDetailsList.Add(personEntered);
+           
         }
         public List<Details> AddDetails(string addressBook, string firstName, string LastName, string address, string city, string state, int zip, long phoneNumber, string email)
         {
@@ -62,7 +42,7 @@ namespace AddressBook_23
             contactDetailsList.Add(contactDetails);
             return contactDetailsList;
         }
-        public void Details(string addressBook)
+        public void AddressBookDetails(string addressBook)
         {
             multipleAddressBookMap.Add(addressBook, contactDetailsMap);
         }
@@ -94,12 +74,12 @@ namespace AddressBook_23
             detailState.Add(state, person);
             foreach (KeyValuePair<string, Details> i in detailCity)
             {
-                Console.WriteLine("City: {0}  {1}", i.Key, i.Value.toString());
+                Console.WriteLine(i);
             }
 
             foreach (KeyValuePair<string, Details> i in detailState)
             {
-                Console.WriteLine("State: {0}  {1}", i.Key, i.Value.toString());
+                Console.WriteLine( i);
             }
 
             Console.WriteLine(detailCity.Count());

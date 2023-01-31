@@ -167,9 +167,9 @@ namespace AddressBook_23
 
         public void Display()
         {
-            foreach (var contact in Contacts)
+           foreach(var contacts in Contacts)
             {
-                Console.WriteLine(contact);
+                Console.WriteLine(contacts);
             }
         }
     }

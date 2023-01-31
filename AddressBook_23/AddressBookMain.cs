@@ -14,6 +14,8 @@ namespace AddressBook_23
         Dictionary<String, Dictionary<String, Dictionary<String, String>>> AddressBookCollection = new Dictionary<string, Dictionary<String, Dictionary<String, String>>>();
         String CurrentAddressBookName = "default";
 
+        public object contactList { get; internal set; }
+
         //UC1 - Create Contact
         public void CreateContact()
         {

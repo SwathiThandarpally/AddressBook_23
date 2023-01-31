@@ -69,7 +69,17 @@ namespace AddressBook_23
             addressBook.ComputeDetails();
             Details details1 = new Details("swathi","apple","goud","adc","uus","gyi",123,344,"wwee");
             details.toString();
-           
+            //UC_10
+            AddressBook addressBook2 = new AddressBook();
+            addressBook.ContactList();
+            addressBook.AddDetails("swathi", "apple", "goud", "adc", "uus", "gyi", 123, 344, "wwee");
+            addressBook.AddressBookDetails("Addressbook");
+            addressBook.Search();
+            addressBook.Count();
+            addressBook.ComputeDetails();
+            Details details2 = new Details("swathi", "apple", "goud", "adc", "uus", "gyi", 123, 344, "wwee");
+            details.toString();
+
 
 
 

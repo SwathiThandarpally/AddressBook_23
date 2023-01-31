@@ -56,16 +56,20 @@ namespace AddressBook_23
             addressBook.AddressBookDetails("Addressbook");
             addressBook.Search();
             addressBook.ComputeDetails();
-            Details details = new Details("swathi","apple","goud","adc","uus","gyi",123,344,"wwee");
+            Details details = new Details("swathi", "apple", "goud", "adc", "uus", "gyi", 123, 344, "wwee");
             details.toString();
-            //details.FirstName = "FirstName";
-            //details.LastName = "LastName";
-            //details.PhoneNumber = 9999999;
-            //details.Zip = 1233;
-            //details.State = "State";
-            //details.Email = "abc@gmail.com";
-            //details.City = "hyd";
-            //details.Address = "address";
+
+
+            //UC_9
+            AddressBook addressBook1 = new AddressBook();
+            addressBook.ContactList();
+            addressBook.AddDetails("swathi", "apple", "goud", "adc", "uus", "gyi", 123, 344, "wwee");
+            addressBook.AddressBookDetails("Addressbook");
+            addressBook.Search();
+            addressBook.ComputeDetails();
+            Details details1 = new Details("swathi","apple","goud","adc","uus","gyi",123,344,"wwee");
+            details.toString();
+           
 
 
 
